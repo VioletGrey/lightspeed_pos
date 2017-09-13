@@ -6,6 +6,9 @@ require_relative 'item_matrices'
 require_relative 'item_attribute_sets'
 require_relative 'images'
 require_relative 'inventories'
+require_relative 'inventory_count_items'
+require_relative 'inventory_count_reconciles'
+require_relative 'inventory_counts'
 require_relative 'orders'
 require_relative 'sales'
 require_relative 'shops'
@@ -24,6 +27,9 @@ module Lightspeed
       :Employees,
       :Images,
       :Inventories,
+      :InventoryCountItems,
+      :InventoryCountReconciles,
+      :InventoryCounts,
       :ItemMatrices,
       :ItemAttributeSets,
       :Items,
