@@ -199,7 +199,7 @@ module Lightspeed
       )
     end
 
-    def put(body:)
+    def put(body: nil)
       client.put(
         path: resource_path,
         body: body

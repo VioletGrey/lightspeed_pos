@@ -7,7 +7,7 @@ module Lightspeed
 
     attr_accessor :context, :resources
 
-    def initialize(context:, attributes: nil)
+    def initialize(context: nil, attributes: nil)
       self.context = context
       instantiate(attributes)
     end
@@ -181,14 +181,14 @@ module Lightspeed
       )
     end
 
-    def post(body:)
+    def post(body: nil)
       client.post(
         path: collection_path,
         body: body
       )
     end
 
-    def put(id, body:)
+    def put(id, body: nil)
       client.put(
         path: resource_path(id),
         body: body

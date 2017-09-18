@@ -23,7 +23,7 @@ module Lightspeed
       "/API"
     end
 
-    def initialize(client, method:, path:, params: nil, body: nil)
+    def initialize(client, method: nil, path: nil, params: nil, body: nil)
       @method = method
       @params = params
       @path = path
